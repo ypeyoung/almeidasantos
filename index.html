@@ -8,7 +8,7 @@
   <meta name="robots" content="index, follow">
   <title>Colégio Almeida Santos - Educação do Futuro</title>
   <style>
-    /* Reset geral */
+    /* Reset e fontes */
     * {
       margin: 0;
       padding: 0;
@@ -16,25 +16,26 @@
       font-family: 'Roboto', sans-serif;
     }
 
-    /* Corpo do site */
     body {
-      background-color: #fafafa;
+      background-color: #f8f9fa;
       color: #333;
       line-height: 1.6;
       font-size: 16px;
     }
 
-    /* Cabeçalho fixo */
+    /* Cabeçalho */
     header {
-      background-color: #003b5c;
+      background-color: #002f3d;
       color: white;
       display: flex;
       justify-content: space-between;
-      padding: 15px 30px;
+      align-items: center;
+      padding: 20px 30px;
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     header .logo {
@@ -68,7 +69,7 @@
       color: #ff8c00;
     }
 
-    /* Seção Hero (Principal) */
+    /* Hero Section */
     .hero {
       height: 100vh;
       background-image: url('https://via.placeholder.com/1200x800');
@@ -81,18 +82,19 @@
       text-align: center;
       position: relative;
       padding: 0 20px;
+      animation: fadeIn 2s ease-out;
     }
 
     .hero h1 {
       font-size: 4rem;
       margin-bottom: 20px;
-      animation: fadeInUp 1s ease-out;
+      animation: fadeInUp 1.5s ease-out;
     }
 
     .hero p {
       font-size: 1.5rem;
       margin-bottom: 30px;
-      animation: fadeInUp 1.5s ease-out;
+      animation: fadeInUp 2s ease-out;
     }
 
     .hero a {
@@ -111,19 +113,17 @@
       transform: translateY(-5px);
     }
 
-    /* Animação de FadeIn */
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(50px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
     }
 
-    /* Seções do conteúdo */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Seções */
     section {
       padding: 80px 20px;
       text-align: center;
@@ -131,11 +131,10 @@
 
     .section-title {
       font-size: 2.5rem;
-      color: #003b5c;
+      color: #002f3d;
       margin-bottom: 30px;
     }
 
-    /* Cards de conteúdo */
     .cards {
       display: flex;
       justify-content: center;
@@ -152,6 +151,7 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       text-align: left;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 2s ease-out;
     }
 
     .card:hover {
@@ -170,7 +170,7 @@
     .card h3 {
       font-size: 1.8rem;
       margin-bottom: 10px;
-      color: #003b5c;
+      color: #002f3d;
     }
 
     .card p {
@@ -178,7 +178,7 @@
       color: #555;
     }
 
-    /* Formulário de contato */
+    /* Formulário de Contato */
     form {
       display: flex;
       flex-direction: column;
@@ -201,7 +201,7 @@
 
     form button {
       padding: 15px;
-      background-color: #003b5c;
+      background-color: #002f3d;
       color: white;
       border: none;
       border-radius: 8px;
@@ -216,7 +216,7 @@
 
     /* Rodapé */
     footer {
-      background-color: #003b5c;
+      background-color: #002f3d;
       color: white;
       text-align: center;
       padding: 30px;
