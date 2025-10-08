@@ -3,41 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Colégio Almeida Santos - Ensino Fundamental e Médio em Iguaba Grande, RJ">
-  <meta name="keywords" content="ensino, escola, Iguaba Grande, colégio, educação">
+  <meta name="description" content="Colégio Almeida Santos - Ensino de alta qualidade em Iguaba Grande, RJ. Ensino Fundamental e Médio com metodologia inovadora.">
+  <meta name="keywords" content="Colégio Almeida Santos, Ensino Fundamental, Ensino Médio, Educação de qualidade, Iguaba Grande, RJ, Escola de 2025">
   <meta name="robots" content="index, follow">
-  <title>Colégio Almeida Santos - Ensino de Base com Qualidade de Superior</title>
+  <title>Colégio Almeida Santos - Educação do Futuro</title>
   <style>
-    /* Reset e padrão de fontes */
+    /* Reset geral */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
 
-    /* Corpo e fundo */
+    /* Corpo do site */
     body {
-      background-color: #f4f4f9;
+      background-color: #fafafa;
       color: #333;
       line-height: 1.6;
+      font-size: 16px;
     }
 
-    /* Cabeçalho */
+    /* Cabeçalho fixo */
     header {
-      background-color: #003e59;
+      background-color: #003b5c;
       color: white;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 20px 30px;
-      position: sticky;
+      padding: 15px 30px;
+      position: fixed;
       top: 0;
-      z-index: 100;
+      width: 100%;
+      z-index: 1000;
     }
 
     header .logo {
       width: 150px;
+      transition: transform 0.3s ease;
+    }
+
+    header .logo:hover {
+      transform: scale(1.1);
     }
 
     header nav ul {
@@ -46,166 +52,186 @@
     }
 
     header nav ul li {
-      margin-left: 30px;
+      margin-left: 20px;
+      font-size: 1.1rem;
     }
 
     header nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
     }
 
     header nav ul li a:hover {
-      color: #ff9800;
+      color: #ff8c00;
     }
 
-    /* Seção principal (Hero) */
+    /* Seção Hero (Principal) */
     .hero {
-      background-image: url('https://via.placeholder.com/1200x600');
+      height: 100vh;
+      background-image: url('https://via.placeholder.com/1200x800');
       background-size: cover;
       background-position: center;
-      height: 100vh;
+      color: white;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
+      position: relative;
       padding: 0 20px;
     }
 
     .hero h1 {
-      font-size: 3.5rem;
+      font-size: 4rem;
       margin-bottom: 20px;
-      animation: fadeIn 2s ease-out;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      animation: fadeInUp 1.5s ease-out;
     }
 
     .hero a {
-      background-color: #ff9800;
+      padding: 15px 35px;
+      background-color: #ff8c00;
       color: white;
-      padding: 10px 30px;
       text-decoration: none;
       font-size: 1.2rem;
-      border-radius: 5px;
-      transition: background-color 0.3s;
+      border-radius: 50px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .hero a:hover {
       background-color: #f57c00;
+      transform: translateY(-5px);
     }
 
-    /* Animação fade-in */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    /* Animação de FadeIn */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* Seções do conteúdo */
     section {
-      padding: 60px 30px;
+      padding: 80px 20px;
       text-align: center;
     }
 
     .section-title {
       font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #003e59;
+      color: #003b5c;
+      margin-bottom: 30px;
     }
 
-    .section-content {
+    /* Cards de conteúdo */
+    .cards {
       display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+      justify-content: center;
       gap: 30px;
+      flex-wrap: wrap;
+      padding: 20px 0;
     }
 
     .card {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      width: 30%;
-      padding: 20px;
-      transition: transform 0.3s, box-shadow 0.3s;
+      background-color: #fff;
+      padding: 30px;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
 
     .card img {
       width: 100%;
+      height: 200px;
+      object-fit: cover;
       border-radius: 8px;
+      margin-bottom: 20px;
     }
 
     .card h3 {
       font-size: 1.8rem;
-      margin: 20px 0;
-      color: #003e59;
+      margin-bottom: 10px;
+      color: #003b5c;
     }
 
     .card p {
-      color: #777;
       font-size: 1rem;
+      color: #555;
     }
 
     /* Formulário de contato */
     form {
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      max-width: 500px;
+      max-width: 600px;
       margin: 0 auto;
+      gap: 15px;
     }
 
     form input, form textarea {
-      padding: 10px;
+      padding: 12px;
       font-size: 1rem;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      width: 100%;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      transition: border 0.3s ease;
+    }
+
+    form input:focus, form textarea:focus {
+      border: 2px solid #ff8c00;
     }
 
     form button {
-      background-color: #003e59;
-      color: white;
       padding: 15px;
+      background-color: #003b5c;
+      color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-size: 1.2rem;
       cursor: pointer;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
     }
 
     form button:hover {
-      background-color: #ff9800;
+      background-color: #ff8c00;
     }
 
     /* Rodapé */
     footer {
-      background-color: #003e59;
+      background-color: #003b5c;
       color: white;
-      padding: 20px;
       text-align: center;
-    }
-
-    footer p {
+      padding: 30px;
       font-size: 1rem;
     }
 
     /* Responsividade */
     @media (max-width: 768px) {
-      header nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-
       .hero h1 {
         font-size: 2.5rem;
       }
 
-      .section-content {
+      .cards {
         flex-direction: column;
+        gap: 20px;
       }
 
       .card {
@@ -217,7 +243,7 @@
 <body>
 
   <header>
-    <img src="https://instagram.flis8-2.fna.fbcdn.net/v/t51.2885-19/348713310_262238523000546_6312544913575852982_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDAwLmMyIn0&_nc_ht=instagram.flis8-2.fna.fbcdn.net&_nc_cat=106&_nc_oc=Q6cZ2QHlnp41DhBnoZUWA5ONBYUwuD8tBsTIqj3Uoi374PyzmRRtOfSvefLeKRvroRjnYL4l-aem0UV95Tt-M0AwCVjo&_nc_ohc=9WOqo_fUsk4Q7kNvwGFvnj-&_nc_gid=C7slTqa__uhiEIbRhl_9wQ&edm=AONqaaQBAAAA&ccb=7-5&oh=00_AfdM5zwtqdRAWTnW5GXvhi-AA3Z91zidxtuwJ6hUcZcpDw&oe=68EC1822&_nc_sid=4e3341" alt="Logo do Colégio Almeida Santos" class="logo">
+    <img src="https://via.placeholder.com/150x50" alt="Logo do Colégio Almeida Santos" class="logo">
     <nav>
       <ul>
         <li><a href="#sobre">Sobre</a></li>
@@ -228,38 +254,39 @@
   </header>
 
   <section class="hero">
-    <h1>Ensino de Base com Qualidade de Superior</h1>
+    <h1>Educação do Futuro, Hoje</h1>
+    <p>Transformando a vida dos estudantes com inovação, tecnologia e dedicação.</p>
     <a href="#cursos">Saiba Mais</a>
   </section>
 
   <section id="sobre">
     <h2 class="section-title">Sobre o Colégio Almeida Santos</h2>
-    <p>Com mais de X anos de tradição, o Colégio Almeida Santos oferece ensino de alta qualidade para os alunos do Ensino Fundamental e Médio.</p>
+    <p>Com mais de 30 anos de tradição, o Colégio Almeida Santos se dedica a oferecer uma educação de alta qualidade para alunos do Ensino Fundamental e Médio, utilizando metodologias inovadoras e focando no desenvolvimento integral dos estudantes.</p>
   </section>
 
   <section id="cursos">
     <h2 class="section-title">Cursos Oferecidos</h2>
-    <div class="section-content">
+    <div class="cards">
       <div class="card">
         <img src="https://via.placeholder.com/400x250" alt="Ensino Fundamental">
         <h3>Ensino Fundamental</h3>
-        <p>Formação completa com qualidade, preparando o aluno para o futuro.</p>
+        <p>Formação completa com atividades interativas e foco no desenvolvimento integral do aluno.</p>
       </div>
       <div class="card">
         <img src="https://via.placeholder.com/400x250" alt="Ensino Médio">
         <h3>Ensino Médio</h3>
-        <p>Foco em vestibulares e desenvolvimento de habilidades críticas.</p>
+        <p>Preparação intensiva para vestibulares com enfoque em competências acadêmicas e socioemocionais.</p>
       </div>
     </div>
   </section>
 
   <section id="contato">
-    <h2 class="section-title">Contato</h2>
+    <h2 class="section-title">Entre em Contato</h2>
     <form>
-      <input type="text" id="nome" name="nome" placeholder="Nome">
-      <input type="email" id="email" name="email" placeholder="Email">
-      <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
-      <button type="submit">Enviar</button>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome">
+      <input type="email" id="email" name="email" placeholder="Seu e-mail">
+      <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar Mensagem</button>
     </form>
   </section>
 
