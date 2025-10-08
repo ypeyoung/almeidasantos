@@ -8,151 +8,214 @@
   <meta name="robots" content="index, follow">
   <title>Colégio Almeida Santos - Ensino de Base com Qualidade de Superior</title>
   <style>
-    /* Reset de margens e padding */
-    body, h1, h2, h3, p, ul, li, form {
+    /* Reset e padrão de fontes */
+    * {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
     }
 
-    /* Corpo do site */
+    /* Corpo e fundo */
     body {
-      background-color: #f9f9f9;
+      background-color: #f4f4f9;
+      color: #333;
       line-height: 1.6;
     }
 
+    /* Cabeçalho */
     header {
+      background-color: #003e59;
+      color: white;
       display: flex;
       justify-content: space-between;
-      padding: 20px;
-      background-color: #004b6d;
-      color: white;
+      align-items: center;
+      padding: 20px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
-    header img {
-      max-height: 50px;
+    header .logo {
+      width: 150px;
     }
 
-    nav ul {
+    header nav ul {
       list-style: none;
       display: flex;
     }
 
-    nav ul li {
-      margin-right: 20px;
+    header nav ul li {
+      margin-left: 30px;
     }
 
-    nav ul li a {
+    header nav ul li a {
       color: white;
       text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
     }
 
-    /* Seção do Banner */
-    .banner {
-      background-color: #004b6d;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-      background-image: url('banner.jpg');
+    header nav ul li a:hover {
+      color: #ff9800;
+    }
+
+    /* Seção principal (Hero) */
+    .hero {
+      background-image: url('https://via.placeholder.com/1200x600');
       background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
     }
 
-    .banner h1 {
-      font-size: 3em;
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-out;
     }
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
+    .hero a {
       background-color: #ff9800;
       color: white;
+      padding: 10px 30px;
       text-decoration: none;
-      font-size: 1.2em;
+      font-size: 1.2rem;
       border-radius: 5px;
+      transition: background-color 0.3s;
     }
 
-    .btn:hover {
-      background-color: #e68900;
+    .hero a:hover {
+      background-color: #f57c00;
     }
 
-    /* Seções de conteúdo */
+    /* Animação fade-in */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Seções do conteúdo */
     section {
-      padding: 50px 20px;
+      padding: 60px 30px;
+      text-align: center;
     }
 
-    section#sobre {
-      background-color: #ffffff;
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #003e59;
     }
 
-    section#cursos {
-      background-color: #f1f1f1;
+    .section-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
     }
 
-    section#contato {
-      background-color: #ffffff;
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .curso {
-      margin-bottom: 30px;
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .curso h3 {
-      color: #004b6d;
-    }
-
-    form label {
-      display: block;
-      margin: 10px 0 5px;
-    }
-
-    form input, form textarea, form button {
+    .card img {
       width: 100%;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      font-size: 1.8rem;
+      margin: 20px 0;
+      color: #003e59;
+    }
+
+    .card p {
+      color: #777;
+      font-size: 1rem;
+    }
+
+    /* Formulário de contato */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    form input, form textarea {
       padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
+      font-size: 1rem;
+      border: 1px solid #ddd;
       border-radius: 5px;
+      width: 100%;
     }
 
     form button {
-      background-color: #004b6d;
+      background-color: #003e59;
       color: white;
-      font-size: 1.2em;
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
       cursor: pointer;
+      transition: background-color 0.3s;
     }
 
     form button:hover {
-      background-color: #003d55;
+      background-color: #ff9800;
     }
 
+    /* Rodapé */
     footer {
-      background-color: #004b6d;
+      background-color: #003e59;
       color: white;
-      text-align: center;
       padding: 20px;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1rem;
     }
 
     /* Responsividade */
-    @media screen and (max-width: 768px) {
-      .banner h1 {
-        font-size: 2em;
+    @media (max-width: 768px) {
+      header nav ul {
+        flex-direction: column;
+        align-items: center;
       }
 
-      nav ul {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .section-content {
         flex-direction: column;
       }
 
-      nav ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
+      .card {
+        width: 80%;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
     <img src="https://instagram.flis8-2.fna.fbcdn.net/v/t51.2885-19/348713310_262238523000546_6312544913575852982_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDAwLmMyIn0&_nc_ht=instagram.flis8-2.fna.fbcdn.net&_nc_cat=106&_nc_oc=Q6cZ2QHlnp41DhBnoZUWA5ONBYUwuD8tBsTIqj3Uoi374PyzmRRtOfSvefLeKRvroRjnYL4l-aem0UV95Tt-M0AwCVjo&_nc_ohc=9WOqo_fUsk4Q7kNvwGFvnj-&_nc_gid=C7slTqa__uhiEIbRhl_9wQ&edm=AONqaaQBAAAA&ccb=7-5&oh=00_AfdM5zwtqdRAWTnW5GXvhi-AA3Z91zidxtuwJ6hUcZcpDw&oe=68EC1822&_nc_sid=4e3341" alt="Logo do Colégio Almeida Santos" class="logo">
     <nav>
@@ -164,40 +227,38 @@
     </nav>
   </header>
 
-  <section class="banner">
+  <section class="hero">
     <h1>Ensino de Base com Qualidade de Superior</h1>
-    <a href="#cursos" class="btn">Saiba Mais</a>
+    <a href="#cursos">Saiba Mais</a>
   </section>
 
   <section id="sobre">
-    <h2>Sobre o Colégio</h2>
-    <p>Com mais de X anos de tradição, o Colégio Almeida Santos oferece um ensino de qualidade para os estudantes da cidade de Iguaba Grande.</p>
-    <img src="infraestrutura.jpg" alt="Infraestrutura do Colégio Almeida Santos">
+    <h2 class="section-title">Sobre o Colégio Almeida Santos</h2>
+    <p>Com mais de X anos de tradição, o Colégio Almeida Santos oferece ensino de alta qualidade para os alunos do Ensino Fundamental e Médio.</p>
   </section>
 
   <section id="cursos">
-    <h2>Cursos Oferecidos</h2>
-    <div class="curso">
-      <h3>Ensino Fundamental</h3>
-      <p>Formação completa com alto padrão educacional.</p>
-    </div>
-    <div class="curso">
-      <h3>Ensino Médio</h3>
-      <p>Preparação para o vestibular com foco no sucesso.</p>
+    <h2 class="section-title">Cursos Oferecidos</h2>
+    <div class="section-content">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="Ensino Fundamental">
+        <h3>Ensino Fundamental</h3>
+        <p>Formação completa com qualidade, preparando o aluno para o futuro.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="Ensino Médio">
+        <h3>Ensino Médio</h3>
+        <p>Foco em vestibulares e desenvolvimento de habilidades críticas.</p>
+      </div>
     </div>
   </section>
 
   <section id="contato">
-    <h2>Contato</h2>
-    <p>Telefone: +55 22 98809-0739</p>
-    <p>Endereço: Av. Paulino Rodrigues de Souza 4960 - Centro, Iguaba Grande</p>
+    <h2 class="section-title">Contato</h2>
     <form>
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email">
-      <label for="mensagem">Mensagem</label>
-      <textarea id="mensagem" name="mensagem"></textarea>
+      <input type="text" id="nome" name="nome" placeholder="Nome">
+      <input type="email" id="email" name="email" placeholder="Email">
+      <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
       <button type="submit">Enviar</button>
     </form>
   </section>
