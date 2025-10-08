@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Colégio Almeida Santos - Ensino Fundamental e Médio em Iguaba Grande, RJ">
+  <meta name="keywords" content="ensino, escola, Iguaba Grande, colégio, educação">
+  <meta name="robots" content="index, follow">
+  <title>Colégio Almeida Santos - Ensino de Base com Qualidade de Superior</title>
+  <style>
+    /* Reset de margens e padding */
+    body, h1, h2, h3, p, ul, li, form {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Corpo do site */
+    body {
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #004b6d;
+      color: white;
+    }
+
+    header img {
+      max-height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Seção do Banner */
+    .banner {
+      background-color: #004b6d;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      background-image: url('banner.jpg');
+      background-size: cover;
+    }
+
+    .banner h1 {
+      font-size: 3em;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff9800;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #e68900;
+    }
+
+    /* Seções de conteúdo */
+    section {
+      padding: 50px 20px;
+    }
+
+    section#sobre {
+      background-color: #ffffff;
+    }
+
+    section#cursos {
+      background-color: #f1f1f1;
+    }
+
+    section#contato {
+      background-color: #ffffff;
+    }
+
+    .curso {
+      margin-bottom: 30px;
+    }
+
+    .curso h3 {
+      color: #004b6d;
+    }
+
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #004b6d;
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #003d55;
+    }
+
+    footer {
+      background-color: #004b6d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsividade */
+    @media screen and (max-width: 768px) {
+      .banner h1 {
+        font-size: 2em;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://instagram.flis8-2.fna.fbcdn.net/v/t51.2885-19/348713310_262238523000546_6312544913575852982_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDAwLmMyIn0&_nc_ht=instagram.flis8-2.fna.fbcdn.net&_nc_cat=106&_nc_oc=Q6cZ2QHlnp41DhBnoZUWA5ONBYUwuD8tBsTIqj3Uoi374PyzmRRtOfSvefLeKRvroRjnYL4l-aem0UV95Tt-M0AwCVjo&_nc_ohc=9WOqo_fUsk4Q7kNvwGFvnj-&_nc_gid=C7slTqa__uhiEIbRhl_9wQ&edm=AONqaaQBAAAA&ccb=7-5&oh=00_AfdM5zwtqdRAWTnW5GXvhi-AA3Z91zidxtuwJ6hUcZcpDw&oe=68EC1822&_nc_sid=4e3341" alt="Logo do Colégio Almeida Santos" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h1>Ensino de Base com Qualidade de Superior</h1>
+    <a href="#cursos" class="btn">Saiba Mais</a>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre o Colégio</h2>
+    <p>Com mais de X anos de tradição, o Colégio Almeida Santos oferece um ensino de qualidade para os estudantes da cidade de Iguaba Grande.</p>
+    <img src="infraestrutura.jpg" alt="Infraestrutura do Colégio Almeida Santos">
+  </section>
+
+  <section id="cursos">
+    <h2>Cursos Oferecidos</h2>
+    <div class="curso">
+      <h3>Ensino Fundamental</h3>
+      <p>Formação completa com alto padrão educacional.</p>
+    </div>
+    <div class="curso">
+      <h3>Ensino Médio</h3>
+      <p>Preparação para o vestibular com foco no sucesso.</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Telefone: +55 22 98809-0739</p>
+    <p>Endereço: Av. Paulino Rodrigues de Souza 4960 - Centro, Iguaba Grande</p>
+    <form>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Colégio Almeida Santos - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
