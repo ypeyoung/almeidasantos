@@ -1,299 +1,1811 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Colégio Almeida Santos - Ensino de alta qualidade em Iguaba Grande, RJ. Ensino Fundamental e Médio com metodologia inovadora.">
-  <meta name="keywords" content="Colégio Almeida Santos, Ensino Fundamental, Ensino Médio, Educação de qualidade, Iguaba Grande, RJ, Escola de 2025">
-  <meta name="robots" content="index, follow">
-  <title>Colégio Almeida Santos - Educação do Futuro</title>
-  <style>
-    /* Reset de margens e padding */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Colégio Almeida Santos | Escola em Iguaba Grande - RJ | Ensino Fundamental e Médio</title>
+    <meta name="description" content="Colégio Almeida Santos oferece ensino de base com qualidade superior em Iguaba Grande - RJ. Do Fundamental ao Médio. Agende sua visita! ☎ (22) 98809-0739">
+    <meta name="keywords" content="escola iguaba grande, colégio particular iguaba grande, ensino fundamental iguaba grande, ensino médio iguaba grande, melhor escola iguaba grande rj">
+    <meta name="author" content="Colégio Almeida Santos">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.colegioalmeidasantos.com.br/">
+    <meta property="og:title" content="Colégio Almeida Santos | Ensino de Base com Qualidade de Superior">
+    <meta property="og:description" content="Escola referência em Iguaba Grande - RJ. Do Ensino Fundamental ao Médio. Agende sua visita!">
+    <meta property="og:image" content="https://www.colegioalmeidasantos.com.br/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.colegioalmeidasantos.com.br/">
+    <meta property="twitter:title" content="Colégio Almeida Santos | Ensino de Base com Qualidade de Superior">
+    <meta property="twitter:description" content="Escola referência em Iguaba Grande - RJ. Do Ensino Fundamental ao Médio.">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Colégio Almeida Santos",
+      "description": "Ensino de base com qualidade de superior",
+      "url": "https://www.colegioalmeidasantos.com.br",
+      "telephone": "+55-22-98809-0739",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Paulino Rodrigues de Souza, 2137",
+        "addressLocality": "Iguaba Grande",
+        "addressRegion": "RJ",
+        "postalCode": "28960-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-22.8387",
+        "longitude": "-42.2270"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Iguaba Grande"
+      },
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.instagram.com/colegioalmeidasantosrj/"
+      ]
     }
-
-    /* Corpo e fundo */
-    body {
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Cabeçalho */
-    header {
-      background-color: #002f3d;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 30px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    header .logo {
-      width: 180px;
-      transition: transform 0.3s ease;
-    }
-
-    header .logo:hover {
-      transform: scale(1.1);
-    }
-
-    header nav ul {
-      list-style: none;
-      display: flex;
-    }
-
-    header nav ul li {
-      margin-left: 25px;
-      font-size: 1.2rem;
-    }
-
-    header nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: color 0.3s ease;
-    }
-
-    header nav ul li a:hover {
-      color: #ff8c00;
-    }
-
-    /* Seção Hero */
-    .hero {
-      height: 100vh;
-      background-image: url('https://via.placeholder.com/1200x800');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      padding: 0 20px;
-      animation: fadeIn 2s ease-out;
-    }
-
-    .hero h1 {
-      font-size: 4rem;
-      margin-bottom: 20px;
-      animation: fadeInUp 1.5s ease-out;
-    }
-
-    .hero p {
-      font-size: 1.5rem;
-      margin-bottom: 30px;
-      animation: fadeInUp 2s ease-out;
-    }
-
-    .hero a {
-      padding: 15px 35px;
-      background-color: #ff8c00;
-      color: white;
-      text-decoration: none;
-      font-size: 1.2rem;
-      border-radius: 50px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .hero a:hover {
-      background-color: #f57c00;
-      transform: translateY(-5px);
-    }
-
-    /* Animação de fadeIn */
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(50px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Seções do conteúdo */
-    section {
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      color: #002f3d;
-      margin-bottom: 30px;
-    }
-
-    .cards {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      padding: 20px 0;
-    }
-
-    .card {
-      background-color: #fff;
-      padding: 30px;
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      text-align: left;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeInUp 2s ease-out;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-
-    .card h3 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-      color: #002f3d;
-    }
-
-    .card p {
-      font-size: 1rem;
-      color: #555;
-    }
-
-    /* Formulário de Contato */
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-      margin: 0 auto;
-      gap: 15px;
-    }
-
-    form input, form textarea {
-      padding: 12px;
-      font-size: 1rem;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      transition: border 0.3s ease;
-    }
-
-    form input:focus, form textarea:focus {
-      border: 2px solid #ff8c00;
-    }
-
-    form button {
-      padding: 15px;
-      background-color: #002f3d;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.2rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    form button:hover {
-      background-color: #ff8c00;
-    }
-
-    /* Rodapé */
-    footer {
-      background-color: #002f3d;
-      color: white;
-      text-align: center;
-      padding: 30px;
-      font-size: 1rem;
-    }
-
-    /* Responsividade */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-
-      .cards {
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .card {
-        width: 80%;
-      }
-    }
-  </style>
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-blue: #0A4D8C;
+            --secondary-blue: #1976D2;
+            --light-blue: #E3F2FD;
+            --accent-blue: #0D7FD8;
+            --dark-blue: #052A4D;
+            --white: #FFFFFF;
+            --off-white: #F8FAFB;
+            --text-dark: #1A2332;
+            --text-gray: #5A6C7D;
+            --gold: #FFB400;
+        }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: var(--white);
+        }
+        
+        /* Loading Screen */
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeOut 0.8s ease-out 2s forwards;
+        }
+        
+        #loading-screen h1 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out 0.3s forwards;
+        }
+        
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid var(--white);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            opacity: 0;
+            animation: fadeInSpin 0.8s ease-out 0.6s forwards, spin 1s linear 0.6s infinite;
+        }
+        
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInSpin {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        nav.scrolled {
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo span {
+            font-size: 2rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-blue);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-cta {
+            background: var(--accent-blue);
+            color: var(--white) !important;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-cta::after {
+            display: none;
+        }
+        
+        .nav-cta:hover {
+            background: var(--primary-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(13, 127, 216, 0.3);
+        }
+        
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-blue);
+            transition: all 0.3s ease;
+            border-radius: 3px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(10, 77, 140, 0.05) 0%, rgba(227, 242, 253, 0.8) 100%);
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(13, 127, 216, 0.1) 0%, transparent 70%);
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            50% {
+                transform: translate(-50px, 30px) rotate(5deg);
+            }
+        }
+        
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content h1 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--dark-blue);
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 2.5s forwards;
+        }
+        
+        .hero-content h1 .highlight {
+            color: var(--accent-blue);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .hero-content p {
+            font-size: 1.3rem;
+            color: var(--text-gray);
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 2.7s forwards;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 2.9s forwards;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1.2rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        .btn-primary {
+            background: var(--accent-blue);
+            color: var(--white);
+            box-shadow: 0 10px 30px rgba(13, 127, 216, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(13, 127, 216, 0.4);
+        }
+        
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-blue);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(10, 77, 140, 0.2);
+        }
+        
+        .hero-image {
+            position: relative;
+            opacity: 0;
+            animation: fadeInRight 1s ease-out 3s forwards;
+        }
+        
+        .hero-image-wrapper {
+            position: relative;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+        }
+        
+        .hero-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 200px;
+            height: 200px;
+            background: var(--gold);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .hero-badge {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background: var(--white);
+            padding: 1.5rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .badge-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .badge-text h4 {
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.2rem;
+        }
+        
+        .badge-text p {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* KPIs Section */
+        .kpis {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+        
+        .kpis-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .kpi-card {
+            background: var(--off-white);
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .kpi-card:nth-child(1) { animation-delay: 0.1s; }
+        .kpi-card:nth-child(2) { animation-delay: 0.2s; }
+        .kpi-card:nth-child(3) { animation-delay: 0.3s; }
+        .kpi-card:nth-child(4) { animation-delay: 0.4s; }
+        .kpi-card:nth-child(5) { animation-delay: 0.5s; }
+        
+        .kpi-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(13, 127, 216, 0.15);
+            border-color: var(--accent-blue);
+            background: var(--white);
+        }
+        
+        .kpi-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .kpi-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.8rem;
+        }
+        
+        .kpi-card p {
+            color: var(--text-gray);
+            font-size: 1rem;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, var(--white) 0%, var(--light-blue) 100%);
+        }
+        
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+        
+        .about-image {
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+        }
+        
+        .about-content .section-label {
+            color: var(--accent-blue);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .about-content h2 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .about-content p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        .values-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .value-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--white);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .value-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .value-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .value-item strong {
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+        
+        /* Segments Section */
+        .segments {
+            padding: 6rem 2rem;
+            background: var(--white);
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+        
+        .section-header .section-label {
+            color: var(--accent-blue);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .section-header h2 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+        
+        .segments-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+        
+        .segment-card {
+            background: var(--off-white);
+            border-radius: 30px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+        }
+        
+        .segment-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 80px rgba(13, 127, 216, 0.2);
+            border-color: var(--accent-blue);
+        }
+        
+        .segment-header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+            color: var(--white);
+            padding: 3rem 2.5rem;
+            text-align: center;
+        }
+        
+        .segment-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .segment-header h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .segment-header .age-range {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .segment-body {
+            padding: 2.5rem;
+        }
+        
+        .segment-body p {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        .segment-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .segment-features li {
+            padding: 0.8rem 0;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .segment-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .segment-features li::before {
+            content: '✓';
+            color: var(--accent-blue);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        /* Differentials Section */
+        .differentials {
+            padding: 6rem 2rem;
+            background: var(--dark-blue);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .differentials::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(13, 127, 216, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .differentials-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .differentials .section-header {
+            margin-bottom: 5rem;
+        }
+        
+        .differentials .section-label {
+            color: var(--gold);
+        }
+        
+        .differentials h2 {
+            color: var(--white);
+        }
+        
+        .differentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .differential-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            padding: 3rem 2.5rem;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+        
+        .differential-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--gold);
+            transform: translateY(-10px);
+        }
+        
+        .differential-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .differential-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+        
+        .differential-card p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 6rem 2rem;
+            background: var(--off-white);
+        }
+        
+        .testimonials-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            padding: 3rem 2.5rem;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            font-family: 'Crimson Pro', serif;
+            color: var(--light-blue);
+            line-height: 1;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stars {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .testimonial-text {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--off-white);
+        }
+        
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            background: var(--light-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+        
+        .author-info h4 {
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-info p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--accent-blue), var(--primary-blue));
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before,
+        .cta-section::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+        }
+        
+        .cta-section::before {
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            top: -200px;
+            left: -200px;
+        }
+        
+        .cta-section::after {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 180, 0, 0.2) 0%, transparent 70%);
+            bottom: -150px;
+            right: -150px;
+        }
+        
+        .cta-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .urgency-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--dark-blue);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .cta-section h2 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            line-height: 1.8;
+        }
+        
+        .cta-section .btn {
+            background: var(--white);
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            padding: 1.5rem 3rem;
+        }
+        
+        .cta-section .btn:hover {
+            background: var(--gold);
+            color: var(--dark-blue);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Blog Section */
+        .blog {
+            padding: 6rem 2rem;
+            background: var(--white);
+        }
+        
+        .blog-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+        
+        .blog-card {
+            background: var(--off-white);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+        
+        .blog-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, var(--light-blue), var(--accent-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary-blue);
+        }
+        
+        .blog-content {
+            padding: 2rem;
+        }
+        
+        .blog-category {
+            display: inline-block;
+            background: var(--light-blue);
+            color: var(--primary-blue);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .blog-card p {
+            color: var(--text-gray);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 2px solid rgba(0, 0, 0, 0.05);
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+        
+        .read-more {
+            color: var(--accent-blue);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-blue);
+            color: var(--white);
+            padding: 4rem 2rem 2rem;
+        }
+        
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-about h3 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--gold);
+            color: var(--dark-blue);
+            transform: translateY(-5px);
+        }
+        
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .footer-section a:hover {
+            color: var(--gold);
+        }
+        
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            z-index: 999;
+            transition: all 0.3s ease;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-ctas {
+                justify-content: center;
+            }
+            
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: var(--white);
+                flex-direction: column;
+                padding: 2rem;
+                transition: left 0.3s ease;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .menu-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(8px, 8px);
+            }
+            
+            .menu-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .menu-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2.2rem;
+            }
+            
+            .segments-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-section h2 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <img src="https://via.placeholder.com/150x50" alt="Logo do Colégio Almeida Santos" class="logo">
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#cursos">Cursos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Educação do Futuro, Hoje</h1>
-    <p>Transformando a vida dos estudantes com inovação, tecnologia e dedicação.</p>
-    <a href="#cursos">Saiba Mais</a>
-  </section>
-
-  <section id="sobre">
-    <h2 class="section-title">Sobre o Colégio Almeida Santos</h2>
-    <p>Com apenas 5 anos de tradição, o Colégio Almeida Santos se dedica a oferecer uma educação de alta qualidade para alunos do Ensino Fundamental e Médio, utilizando metodologias inovadoras e focando no desenvolvimento integral dos estudantes.</p>
-  </section>
-
-  <section id="cursos">
-    <h2 class="section-title">Cursos Oferecidos</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Ensino Fundamental">
-        <h3>Ensino Fundamental</h3>
-        <p>Formação completa com atividades interativas e foco no desenvolvimento integral do aluno.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" alt="Ensino Médio">
-        <h3>Ensino Médio</h3>
-        <p>Preparação intensiva para vestibulares com enfoque em competências acadêmicas e socioemocionais.</p>
-      </div>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <h1>Colégio Almeida Santos</h1>
+        <div class="loader"></div>
     </div>
-  </section>
-
-  <section id="contato">
-    <h2 class="section-title">Entre em Contato</h2>
-    <form>
-      <input type="text" id="nome" name="nome" placeholder="Seu nome">
-      <input type="email" id="email" name="email" placeholder="Seu e-mail">
-      <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-      <button type="submit">Enviar Mensagem</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Colégio Almeida Santos - Todos os direitos reservados</p>
-  </footer>
-
+    
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>🎓</span> Almeida Santos
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#ensino">Ensino</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#" class="nav-cta" onclick="openWhatsApp()">📲 Falar Conosco</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Seu filho merece uma <span class="highlight">base forte</span> para vencer no futuro.</h1>
+                <p>No Colégio Almeida Santos, oferecemos ensino de base com qualidade de nível superior, do Ensino Fundamental ao Médio, em Iguaba Grande.</p>
+                <div class="hero-ctas">
+                    <a href="#" class="btn btn-primary" onclick="openWhatsApp()">📲 Agendar Visita</a>
+                    <a href="#ensino" class="btn btn-secondary">🎓 Garantir Vaga</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <div style="width: 100%; height: 500px; background: linear-gradient(135deg, var(--light-blue), var(--accent-blue)); display: flex; align-items: center; justify-content: center; font-size: 8rem; color: var(--primary-blue);">
+                        🏫
+                    </div>
+                </div>
+                <div class="hero-badge">
+                    <div class="badge-icon">📍</div>
+                    <div class="badge-text">
+                        <h4>Iguaba Grande - RJ</h4>
+                        <p>Referência em educação</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- KPIs Section -->
+    <section class="kpis">
+        <div class="kpis-container">
+            <div class="kpi-card">
+                <div class="kpi-icon">📚</div>
+                <h3>Ensino Completo</h3>
+                <p>Do Fundamental ao Médio</p>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">🧠</div>
+                <h3>Metodologia Eficaz</h3>
+                <p>Focada em resultados</p>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">👨‍🏫</div>
+                <h3>Professores Qualificados</h3>
+                <p>Equipe experiente e dedicada</p>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">🏫</div>
+                <h3>Estrutura Completa</h3>
+                <p>Ambiente preparado</p>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">📍</div>
+                <h3>Referência Local</h3>
+                <p>Iguaba Grande - RJ</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about fade-in" id="sobre">
+        <div class="about-container">
+            <div class="about-image">
+                <div style="width: 100%; height: 500px; background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue)); border-radius: 30px; display: flex; align-items: center; justify-content: center; font-size: 8rem; color: white;">
+                    📖
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="section-label">Conheça Nossa História</div>
+                <h2>Ensino de base com qualidade de superior</h2>
+                <p>O Colégio Almeida Santos nasceu do sonho de transformar vidas através da educação de qualidade. Há anos, atuamos em Iguaba Grande com o compromisso de formar cidadãos preparados não apenas academicamente, mas também emocionalmente e socialmente.</p>
+                <p>Nossa missão é oferecer uma base sólida que acompanhará nossos alunos por toda a vida. Acreditamos que educação vai além dos livros: é formação de caráter, desenvolvimento de habilidades e construção de futuro.</p>
+                <div class="values-list">
+                    <div class="value-item">
+                        <div class="value-icon">✨</div>
+                        <div><strong>Excelência:</strong> Compromisso com a qualidade em cada detalhe</div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">❤️</div>
+                        <div><strong>Acolhimento:</strong> Ambiente seguro e afetuoso</div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🎯</div>
+                        <div><strong>Resultados:</strong> Foco no desenvolvimento integral</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Segments Section -->
+    <section class="segments fade-in" id="ensino">
+        <div class="section-header">
+            <div class="section-label">Nossos Segmentos</div>
+            <h2>Do Fundamental ao Médio</h2>
+            <p>Acompanhamos o desenvolvimento do seu filho em todas as etapas da educação básica</p>
+        </div>
+        <div class="segments-container">
+            <div class="segment-card">
+                <div class="segment-header">
+                    <div class="segment-icon">🌱</div>
+                    <h3>Ensino Fundamental I</h3>
+                    <p class="age-range">1º ao 5º ano</p>
+                </div>
+                <div class="segment-body">
+                    <p>Construindo as bases fundamentais para o futuro. Nesta fase, focamos em alfabetização de qualidade, raciocínio lógico e desenvolvimento dos valores essenciais para a vida.</p>
+                    <ul class="segment-features">
+                        <li>Alfabetização sólida e contextualizada</li>
+                        <li>Desenvolvimento do raciocínio lógico-matemático</li>
+                        <li>Formação de valores e cidadania</li>
+                        <li>Acompanhamento individualizado</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" onclick="openWhatsApp()" style="width: 100%;">👉 Falar com a Secretaria</a>
+                </div>
+            </div>
+            
+            <div class="segment-card">
+                <div class="segment-header">
+                    <div class="segment-icon">🌿</div>
+                    <h3>Ensino Fundamental II</h3>
+                    <p class="age-range">6º ao 9º ano</p>
+                </div>
+                <div class="segment-body">
+                    <p>Aprofundando conhecimentos e desenvolvendo autonomia. Os alunos ampliam sua visão de mundo, desenvolvem pensamento crítico e se preparam para os desafios do Ensino Médio.</p>
+                    <ul class="segment-features">
+                        <li>Aprofundamento nas disciplinas</li>
+                        <li>Desenvolvimento de autonomia</li>
+                        <li>Pensamento crítico e reflexivo</li>
+                        <li>Preparação para o Ensino Médio</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" onclick="openWhatsApp()" style="width: 100%;">👉 Falar com a Secretaria</a>
+                </div>
+            </div>
+            
+            <div class="segment-card">
+                <div class="segment-header">
+                    <div class="segment-icon">🌳</div>
+                    <h3>Ensino Médio</h3>
+                    <p class="age-range">1ª à 3ª série</p>
+                </div>
+                <div class="segment-body">
+                    <p>Preparação completa para vestibulares, ENEM e vida profissional. Consolidamos todo o aprendizado e preparamos nossos alunos para os maiores desafios.</p>
+                    <ul class="segment-features">
+                        <li>Preparação para ENEM e vestibulares</li>
+                        <li>Orientação vocacional</li>
+                        <li>Desenvolvimento de projeto de vida</li>
+                        <li>Formação completa e sólida</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" onclick="openWhatsApp()" style="width: 100%;">👉 Falar com a Secretaria</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Differentials Section -->
+    <section class="differentials fade-in" id="diferenciais">
+        <div class="differentials-container">
+            <div class="section-header">
+                <div class="section-label">Por que escolher</div>
+                <h2>Nossos Diferenciais</h2>
+                <p>O que faz do Colégio Almeida Santos a escolha certa para o futuro do seu filho</p>
+            </div>
+            <div class="differentials-grid">
+                <div class="differential-card">
+                    <div class="differential-icon">👁️</div>
+                    <h3>Ensino Individualizado</h3>
+                    <p>Cada aluno é único. Respeitamos o ritmo e as características individuais, promovendo o melhor de cada um.</p>
+                </div>
+                <div class="differential-card">
+                    <div class="differential-icon">🤝</div>
+                    <h3>Acompanhamento Próximo</h3>
+                    <p>Mantemos comunicação constante com as famílias, garantindo transparência e parceria no desenvolvimento dos alunos.</p>
+                </div>
+                <div class="differential-card">
+                    <div class="differential-icon">🛡️</div>
+                    <h3>Ambiente Seguro</h3>
+                    <p>Segurança física e emocional. Criamos um espaço acolhedor onde os alunos se sentem protegidos e confiantes.</p>
+                </div>
+                <div class="differential-card">
+                    <div class="differential-icon">🎯</div>
+                    <h3>Metodologia Eficaz</h3>
+                    <p>Técnicas pedagógicas atualizadas que realmente funcionam, comprovadas por nossos resultados consistentes.</p>
+                </div>
+                <div class="differential-card">
+                    <div class="differential-icon">💡</div>
+                    <h3>Formação Humana</h3>
+                    <p>Além do conhecimento acadêmico, formamos cidadãos éticos, responsáveis e preparados para a vida.</p>
+                </div>
+                <div class="differential-card">
+                    <div class="differential-icon">📈</div>
+                    <h3>Resultados Consistentes</h3>
+                    <p>Nossa metodologia e dedicação se refletem no sucesso acadêmico e pessoal de nossos alunos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials fade-in" id="depoimentos">
+        <div class="testimonials-container">
+            <div class="section-header">
+                <div class="section-label">Depoimentos</div>
+                <h2>O que dizem nossos pais</h2>
+                <p>A confiança das famílias é nossa maior conquista</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Matriculei minha filha no Colégio Almeida Santos e foi a melhor decisão. A evolução dela em apenas um ano foi impressionante. Os professores são dedicados e realmente se importam com o aprendizado de cada aluno."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MC</div>
+                            <div class="author-info">
+                                <h4>Mariana Costa</h4>
+                                <p>Mãe de aluna do 4º ano</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Meu filho estava com dificuldades em matemática. O acompanhamento individualizado da equipe fez toda diferença. Hoje ele não só melhorou as notas, como desenvolveu gosto pela matéria. Muito obrigado!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RS</div>
+                            <div class="author-info">
+                                <h4>Roberto Silva</h4>
+                                <p>Pai de aluno do 7º ano</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Escolhemos o Colégio Almeida Santos pela reputação e não nos arrependemos. O ambiente é acolhedor, a estrutura é ótima e a comunicação com a escola é transparente. Nossos filhos amam estudar aqui!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AP</div>
+                            <div class="author-info">
+                                <h4>Ana Paula Oliveira</h4>
+                                <p>Mãe de alunos do 2º e 5º ano</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="urgency-badge">⚠️ Vagas Limitadas para Este Ano Letivo</div>
+            <h2>Não deixe para depois o que define o futuro do seu filho</h2>
+            <p>Agende uma visita e conheça pessoalmente nossa estrutura, metodologia e equipe. Tire todas as suas dúvidas e descubra por que somos referência em educação em Iguaba Grande.</p>
+            <a href="#" class="btn" onclick="openWhatsApp()">📲 Falar Agora no WhatsApp</a>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section class="blog fade-in" id="blog">
+        <div class="blog-container">
+            <div class="section-header">
+                <div class="section-label">Blog Educacional</div>
+                <h2>Conteúdo que Ajuda</h2>
+                <p>Artigos e dicas para pais e responsáveis sobre educação e desenvolvimento infantil</p>
+            </div>
+            <div class="blog-grid">
+                <a href="#" class="blog-card">
+                    <div class="blog-image">📚</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Escolha da Escola</span>
+                        <h3>Como Escolher a Melhor Escola em Iguaba Grande</h3>
+                        <p>Descubra os critérios essenciais para escolher uma escola que realmente fará diferença na vida do seu filho.</p>
+                        <div class="blog-meta">
+                            <span>5 min de leitura</span>
+                            <span class="read-more">Ler mais →</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="blog-card">
+                    <div class="blog-image">🌱</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Fundamental I</span>
+                        <h3>A Importância do Ensino Fundamental de Qualidade</h3>
+                        <p>Entenda por que os primeiros anos escolares são decisivos para o sucesso acadêmico futuro.</p>
+                        <div class="blog-meta">
+                            <span>7 min de leitura</span>
+                            <span class="read-more">Ler mais →</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="blog-card">
+                    <div class="blog-image">🎯</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Fundamental II</span>
+                        <h3>Diferença Entre Fundamental I e II: O que Esperar</h3>
+                        <p>Conheça as mudanças que acontecem nessa transição e como preparar seu filho para essa nova fase.</p>
+                        <div class="blog-meta">
+                            <span>6 min de leitura</span>
+                            <span class="read-more">Ler mais →</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="blog-card">
+                    <div class="blog-image">🎓</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Ensino Médio</span>
+                        <h3>Como Preparar seu Filho para o Ensino Médio</h3>
+                        <p>Estratégias e dicas práticas para ajudar seu filho a ter sucesso nesta fase crucial da educação.</p>
+                        <div class="blog-meta">
+                            <span>8 min de leitura</span>
+                            <span class="read-more">Ler mais →</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="blog-card">
+                    <div class="blog-image">💪</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Desenvolvimento</span>
+                        <h3>Educação de Base e Sucesso no Futuro</h3>
+                        <p>A relação comprovada entre uma base educacional forte e o sucesso profissional e pessoal.</p>
+                        <div class="blog-meta">
+                            <span>6 min de leitura</span>
+                            <span class="read-more">Ler mais →</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="blog-card">
+                    <div class="blog-image">🏫</div>
+                    <div class="blog-content">
+                        <span class="blog-category">Dicas</span>
+                        <h3>10 Sinais de uma Escola de Qualidade</h3>
+                        <p>Aprenda a identificar os indicadores que realmente importam ao avaliar uma instituição de ensino.</p>
+                        <div class="blog-meta">
+                            <span>5 min de leitura</span>
+                            <span class="read-more">Ler mais →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Colégio Almeida Santos</h3>
+                <p>Ensino de base com qualidade de superior. Formando cidadãos preparados para os desafios do futuro desde sempre.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/colegioalmeidasantosrj/" target="_blank" class="social-link" title="Instagram">📷</a>
+                    <a href="https://share.google/X7qjzfAGCRZhgbXZO" target="_blank" class="social-link" title="Google">🔍</a>
+                    <a href="#" onclick="openWhatsApp()" class="social-link" title="WhatsApp">💬</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#ensino">Segmentos</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Ensino</h4>
+                <ul>
+                    <li><a href="#ensino">Fundamental I</a></li>
+                    <li><a href="#ensino">Fundamental II</a></li>
+                    <li><a href="#ensino">Ensino Médio</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="#" onclick="openWhatsApp()">📱 (22) 98809-0739</a></li>
+                    <li><a href="#">📍 R. Paulino Rodrigues de Souza, 2137</a></li>
+                    <li><a href="#">Centro - Iguaba Grande, RJ</a></li>
+                    <li><a href="#">📮 CEP: 28960-000</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Colégio Almeida Santos - Iguaba Grande, RJ. Todos os direitos reservados. | Ensino de Base com Qualidade de Superior</p>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="openWhatsApp()" title="Fale conosco no WhatsApp">
+        💬
+    </div>
+    
+    <script>
+        // WhatsApp Function
+        function openWhatsApp() {
+            const message = encodeURIComponent("Olá! Gostaria de informações sobre matrículas no Colégio Almeida Santos. Poderia me ajudar?");
+            window.open(`https://wa.me/5522988090739?text=${message}`, '_blank');
+        }
+        
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Scroll Animation Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Remove loading screen after page loads
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loading-screen').style.display = 'none';
+            }, 2500);
+        });
+    </script>
 </body>
 </html>
